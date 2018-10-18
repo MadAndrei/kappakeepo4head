@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "sumBetweenEvenOdd.h"
-#include "indexFirstEven.h"
-#include "indexLastOdd.h"
+#include "sum_between_even_odd.h"
+#include "index_first_even.h"
+#include "index_last_odd.h"
 
-int sumBetweenEvenOdd (int *array, int n){
+int sum_between_even_odd (int *array, int n){
 	int i;
 	int sumBetween=0;
 	if (indexFirstEven(array, n) == -1)
