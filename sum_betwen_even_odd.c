@@ -10,7 +10,7 @@ int sum_between_even_odd (int *array, int n){
 	int sumBetween=0;
 	if (indexFirstEven(array, n) == -1)
 		return sumBetween;
-	for (i=indexFirstEven(array, n); i<indexLastOdd(array, n); i++){
+	for (i=index_first_even(array, n); i<index_last_odd(array, n); i++){
 		sumBetween=sumBetween+abs(array[i]);
 }
 return sumBetween;
