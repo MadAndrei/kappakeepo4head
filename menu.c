@@ -21,19 +21,19 @@ int main (){
 		if (indexFirstEven(array, i) == -1)
 			printf ("Данные некорректны\n");
 		else
-			printf ("%d\n", indexFirstEven(array, i));
+			printf ("%d\n", index_first_even(array, i));
 	}
 	if (which == 1){
-		if (indexLastOdd(array, i) == -1)
+		if (index_last_odd(array, i) == -1)
 			printf ("Данные некорректны\n");	
 		else
 			printf ("%d\n", indexLastOdd(array, i));
 	}	
 	if (which == 3){
-		printf ("%d\n", sumBeforeEvenAfterOdd(array, i));
+		printf ("%d\n", sum_before_even_after_odd(array, i));
 	}
 	if (which == 2){
-		printf ("%d\n", sumBetweenEvenOdd(array, i));
+		printf ("%d\n", sum_between_even_odd(array, i));
 	}
 	if (which !=0 && which != 1 && which != 2 && which != 3) 
 		printf ("Данные некорректны\n");
