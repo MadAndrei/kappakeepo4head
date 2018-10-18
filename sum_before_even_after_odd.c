@@ -8,12 +8,12 @@
 int sum_before_even_after_odd (int *array, int n){
 	int i;
 	int sumBeforeAfter = 0;
-	for (i=0; i<indexFirstEven(array, n); i++){
+	for (i=0; i<index_first_even(array, n); i++){
 		sumBeforeAfter = abs(array[i]) + sumBeforeAfter;
 	}
-	if (indexLastOdd(array, n) == -1)
+	if (index_last_odd(array, n) == -1)
 		return sumBeforeAfter;	
-	for (i=indexLastOdd(array, n); i<n; i++){
+	for (i=index_last_odd(array, n); i<n; i++){
 		sumBeforeAfter = abs(array[i]) + sumBeforeAfter;
 	}
 	return sumBeforeAfter;
