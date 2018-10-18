@@ -18,7 +18,7 @@ int main (){
 	i++;
 }
 	if (which == 0){
-		if (indexFirstEven(array, i) == -1)
+		if (index_first_even(array, i) == -1)
 			printf ("Данные некорректны\n");
 		else
 			printf ("%d\n", index_first_even(array, i));
@@ -27,7 +27,7 @@ int main (){
 		if (index_last_odd(array, i) == -1)
 			printf ("Данные некорректны\n");	
 		else
-			printf ("%d\n", indexLastOdd(array, i));
+			printf ("%d\n", index_last_odd(array, i));
 	}	
 	if (which == 3){
 		printf ("%d\n", sum_before_even_after_odd(array, i));
