@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "indexLastOdd.h"
+#include "index_last_odd.h"
 
-int indexLastOdd (int *array, int n){
+int index_last_odd (int *array, int n){
 	int odd = -1;
 	int i;
 	for (i=0; i<n; i++){
