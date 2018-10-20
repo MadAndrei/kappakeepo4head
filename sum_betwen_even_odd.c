@@ -8,7 +8,7 @@
 int sum_between_even_odd (int *array, int n){
 	int i;
 	int sumBetween=0;
-	if (indexFirstEven(array, n) == -1)
+	if (index_first_even(array, n) == -1)
 		return sumBetween;
 	for (i=index_first_even(array, n); i<index_last_odd(array, n); i++){
 		sumBetween=sumBetween+abs(array[i]);
