@@ -30,7 +30,7 @@ int main (){
 			printf ("%d\n", index_last_odd(array, i));
 	}	
 	if (which == 3){
-		printf ("%d\n", sum_before_even_after_odd(array, i));
+		printf ("%d\n", sum_before_even_and_after_odd(array, i));
 	}
 	if (which == 2){
 		printf ("%d\n", sum_between_even_odd(array, i));
