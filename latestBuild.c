@@ -382,24 +382,7 @@ int main(int argc, char **argv){
                 anotherColour_ = createColour(optarg);
                 
                 break;
-                
- /*           case 'O':
-
-                if(!strcmp("x", optarg))
-                {
-                    isFilled =  1;
-                }
-                if(!strcmp("y", optarg))
-                {
-                    isFilled =  0;
-                }
-                else
-                {
-                    printf("Tbl DoJlBb0Eb\n");
-                }
-                
-                break;
-         */   
+                  
        //     case 'h':
         //        printHelp();
          //       break;
@@ -517,13 +500,6 @@ int main(int argc, char **argv){
         break;
     }
 	
-//	setPixel(tmp, 10, 6, tmpColour_);
-//	drawCircle(tmp, centrX, centrY, radius, createColour(bordColour), createColour(fillColour), radiusFilled, isFilled);
-//	drawCircle(tmp, 200, 200, 70, test1, test2, 20, isFilled);
-//	drawCircle(tmp, 100, 100, 50, tmpColour, tmpColour_, 1, 0);
-//	reflectBmp(tmp, centrX, centrY, centr2X+1, centr2Y+1,  isFilled); // +1 po koord vtorogo ugla
-//	reflectBmp(tmp, 6, 7, 23, 22,  0); // +1 po koord vtorogo ugla
-//	copyBmp(tmp, 6, 7, 13, 14, 20, 20); // +1 po koord vtoroi to4ki
-	writeBmp("./12345.bmp", tmp);
+	writeBmp(argv[argc-1], tmp);
 	system("pause");
 }
