@@ -246,7 +246,7 @@ int main(int argc, char **argv){
 	int opt = 0;
 	int longIndex = 0;
 	int flag = 0;
-	char *optstring = "drcM:E:M:f:K:R:S:C:W:h";
+	char *optstring = "drcN:M:E:M:f:K:R:S:C:W:h";
 	
 	
 	struct option longOpts[] = {
