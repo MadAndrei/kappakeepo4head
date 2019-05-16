@@ -252,9 +252,9 @@ int main(int argc, char **argv){
 	char bordColour[13] = "";
 	char fillColour[13] = "";
 	int mod;
-	uint8_t isFilled;
+	uint8_t isFilled = 0;
 	uint32_t centrX, centrY, radius, centr2X, centr2Y, centr3X, centr3Y;
-	uint32_t radiusFilled = 0;
+	uint32_t radiusFilled = 1;
 	Colour anotherColour;
 	Colour anotherColour_;
 	int opt = 0;
@@ -437,7 +437,7 @@ int main(int argc, char **argv){
             if(centrX < 0 || centrY < 0 || centr2X >= tmp->header.width_px || centr2Y > (tmp->header.height_px - 1) || centrX > centr2X || centrY > centr2Y || centr2Y > centr3Y|| centr2X > centr3X){
                    printf("You type wrong coords of copying area\n");
                    break;
-               }
+            }
             else{
                 copyBmp(tmp, centrX, centrY, centr2X+1, centr2Y+1, centr3X, centr3Y);
             }
@@ -448,7 +448,7 @@ int main(int argc, char **argv){
             if(centrX < 0 || centrY < 0 || centrX + radius >= tmp->header.width_px || centrY + radius > (tmp->header.height_px - 1 ) || centrX - radius <= 0 || centrY - radius <= 0 || radius <= 0 || radiusFilled > radius || radiusFilled < 0){
                    printf("You type wrong coords of centr of circle or wrong radius or wrong width\n");
                    break;
-               }
+            }
             else{
                 drawCircle(tmp, centrX, centrY, radius, anotherColour, anotherColour_, radiusFilled, isFilled);
             }
